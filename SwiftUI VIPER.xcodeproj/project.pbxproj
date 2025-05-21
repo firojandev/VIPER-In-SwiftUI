@@ -11,6 +11,11 @@
 		C1819C912DDDE501006D6690 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1819C902DDDE501006D6690 /* ContentView.swift */; };
 		C1819C932DDDE502006D6690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1819C922DDDE502006D6690 /* Assets.xcassets */; };
 		C1819C962DDDE502006D6690 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1819C952DDDE502006D6690 /* Preview Assets.xcassets */; };
+		C1819C9E2DDDE58D006D6690 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1819C9D2DDDE58D006D6690 /* UserModel.swift */; };
+		C1819CA12DDDE635006D6690 /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1819CA02DDDE635006D6690 /* UserInteractor.swift */; };
+		C1819CA42DDDE6DA006D6690 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1819CA32DDDE6DA006D6690 /* UserRepository.swift */; };
+		C1819CA72DDDE91C006D6690 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1819CA62DDDE91C006D6690 /* UsersListView.swift */; };
+		C1819CA92DDDE972006D6690 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1819CA82DDDE972006D6690 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		C1819C902DDDE501006D6690 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C1819C922DDDE502006D6690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1819C952DDDE502006D6690 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C1819C9D2DDDE58D006D6690 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C1819CA02DDDE635006D6690 /* UserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
+		C1819CA32DDDE6DA006D6690 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		C1819CA62DDDE91C006D6690 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
+		C1819CA82DDDE972006D6690 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,10 @@
 		C1819C8D2DDDE501006D6690 /* SwiftUI VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				C1819CA52DDDE8FC006D6690 /* view */,
+				C1819CA22DDDE6C4006D6690 /* repository */,
+				C1819C9F2DDDE609006D6690 /* interactor */,
+				C1819C9C2DDDE570006D6690 /* model */,
 				C1819C8E2DDDE501006D6690 /* SwiftUI_VIPERApp.swift */,
 				C1819C902DDDE501006D6690 /* ContentView.swift */,
 				C1819C922DDDE502006D6690 /* Assets.xcassets */,
@@ -65,6 +79,39 @@
 				C1819C952DDDE502006D6690 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C1819C9C2DDDE570006D6690 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C1819C9D2DDDE58D006D6690 /* UserModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C1819C9F2DDDE609006D6690 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C1819CA02DDDE635006D6690 /* UserInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		C1819CA22DDDE6C4006D6690 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				C1819CA32DDDE6DA006D6690 /* UserRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		C1819CA52DDDE8FC006D6690 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C1819CA62DDDE91C006D6690 /* UsersListView.swift */,
+				C1819CA82DDDE972006D6690 /* UserViewModel.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +185,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1819C912DDDE501006D6690 /* ContentView.swift in Sources */,
+				C1819CA72DDDE91C006D6690 /* UsersListView.swift in Sources */,
+				C1819CA12DDDE635006D6690 /* UserInteractor.swift in Sources */,
+				C1819C9E2DDDE58D006D6690 /* UserModel.swift in Sources */,
+				C1819CA42DDDE6DA006D6690 /* UserRepository.swift in Sources */,
+				C1819CA92DDDE972006D6690 /* UserViewModel.swift in Sources */,
 				C1819C8F2DDDE501006D6690 /* SwiftUI_VIPERApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

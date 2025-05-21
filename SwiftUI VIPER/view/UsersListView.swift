@@ -6,3 +6,22 @@
 //
 
 import Foundation
+import SwiftUI
+
+
+struct UserListView: View {
+    @StateObject var viewModel: UserViewModel
+
+    var body: some View {
+        NavigationView {
+            List(viewModel.users) { user in
+                Text(user.name)
+            }
+            .navigationTitle("Users")
+            .task {
+                await viewModel.loadUsers()
+            }
+        }
+    }
+}
+

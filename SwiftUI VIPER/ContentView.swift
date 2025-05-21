@@ -7,15 +7,17 @@
 
 import SwiftUI
 
+struct AppDependencies {
+    @MainActor
+    static func makeUserListViewModel() -> UserViewModel {
+        let repo = ApiUserRepository()
+        let interactor = UserListInteractor(repository: repo)
+        return UserViewModel(interactor: interactor)
+    }
+}
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        UserListView(viewModel: AppDependencies.makeUserListViewModel())
     }
 }
 
